@@ -1,3 +1,26 @@
+# 🎉 우리인재개발원 수강생 여러분!
+
+오늘도 배움이라는 새로운 모험을 시작하신 여러분을 응원합니다! 🚀
+
+때로는 코드가 에러를 내고, 모델이 학습을 거부하고,
+컴퓨터가 내 마음처럼 움직이지 않아도 괜찮습니다.
+
+**에러는 성장의 신호! 실패는 실력의 업데이트!** 😎
+
+오늘 배운 하나가 내일의 실력이 되고,
+오늘의 작은 도전이 멋진 미래를 만들어 갑니다.
+
+서로 웃고, 함께 배우고, 즐겁게 도전하면서
+우리 모두 원하는 목표까지 힘차게 달려가 봅시다!
+
+**여러분의 오늘은 행복하게, 배움은 즐겁게,
+미래는 누구보다 멋지게!** 🌈
+
+화이팅입니다! 💪🔥
+
+---
+
+
 # GitHub 및 모델 저장소에서 Python으로 파일 다운로드하기
 
 > **핵심 목표:** GitHub 또는 모델 저장소(Hugging Face 등)에 있는 Python
@@ -81,11 +104,14 @@ https://raw.githubusercontent.com/사용자명/저장소명/main/example.py
 ``` python
 from pathlib import Path
 import requests
+import os
+
 
 # GitHub 파일의 Raw URL
 raw_url = "https://raw.githubusercontent.com/사용자명/저장소명/main/example.py"
 
 # 로컬 저장 경로
+# os.makedirs("/lec_model", exist_ok=True)
 save_path = Path(r"C:\IT\github_download\example.py")
 save_path.parent.mkdir(parents=True, exist_ok=True)
 
